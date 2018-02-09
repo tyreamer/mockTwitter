@@ -1,0 +1,16 @@
+<div style="background-color: #fff;">
+	<center>	
+		 <a href= "about.php" style = "padding-right: 20px;"> About Us </a>  
+		 <a href= "contact.php" style = "padding-right: 20px;"> Contact </a>  
+		 <a href= "faq.php"> FAQ </a>  				 
+		<span class='glyphicon glyphicon-copyright-mark'></span><span id="year"></span>
+	</center>
+</div>
+<script>
+
+$(function() {
+	var intYear = "" + (new Date).getFullYear();
+	$('#year').append(intYear);
+});
+
+</script>

@@ -1,0 +1,1169 @@
+
+.ppContainer{
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.profilePic {
+    width:125px;
+    height:125px;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	display: block;
+	position: relative;	
+}
+
+
+.interactionContainer {
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.interactionContainer button{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	display: block;
+}
+
+.navbar {
+	background-color: #fff;
+}
+
+.myBg {
+	height: 300px;
+	width: 100%;
+	background-attachment: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;		
+}
+
+.myInfo {
+	font-weight: bold;
+	background-color: rgba(0,0,0,.1);
+	color: white;
+}
+
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+
+  
+  	.link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .nav {
+      font-size: 18px;
+    }
+	
+	.nav button {
+		height: 34px;
+	}
+  
+  .nav li ul{
+	display: none;			
+  }
+
+	.nav li:hover ul{
+	display: block;
+	position: absolute;
+	padding: 10px;
+	background-color: #fff !important;
+	list-style-type: none;
+	text-align: center;
+	z-index: 15;
+	}
+		
+	.nav li ul li {					
+	padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover {
+	background-color: rgba(0,0,0,.2);
+	}
+
+	.nav .btn-default
+	{
+		height:34px;
+	}
+	
+  
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+   }
+
+
+ .content {
+    position:absolute;
+    padding: 4% 40px 10% 0px;
+    height: 50%;
+    width:80%;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  
+   .squareLinkItem:hover {
+	  cursor: pointer;
+	   color: lightblue;
+  }
+  
+ 
+.postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+  }
+  
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: orange;
+  }
+
+  body { 
+    padding-top: 50px; 
+    background-color: #fff;
+  }
+  
+  .upvote:hover {
+	  cursor: pointer;
+  }
+  
+  .downvote:hover {
+	  cursor: pointer;
+  }
+  
+  .modal-dialog {
+	  position: absolute;
+	  width: 400px;
+	  /*height: 200px;*/
+	  top: 50%;
+	  left: 50%;
+	  margin: -120px 0 0 -200px;
+  }
+  
+  
+  .modalItem { display: inline-block; color: #000;
+	  text-align: center;
+	  font-size: 2em;
+	  padding: 2% 5% 2% 5%;
+  }
+  
+  a:hover {
+	  text-decoration: none;
+  }
+  
+  .modalItem:hover {
+	  background-color: rgba(0,0,0,.2);
+	  border-radius: 10px;
+  }
+  
+    div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+
+  .postDetailsHead {
+	  position: relative;
+	  top: 15px;
+  }
+
+
+  @media(max-width:767px){
+ div#userposts {
+    padding: 0;
+}
+ div.postDetailsHead {
+	  left: 0;
+	  top: 0;
+  }
+  
+  .myPhoto {	  
+	  display: inline;
+	  width:50px;
+	  height:50px;
+	  margin: 0;
+	  z-index: 5;
+	  float: left;
+	} 
+  
+	#fbLogin h4 {
+		top: 15%;
+	}
+	
+	.newAccount  {
+		font-size: 10px;
+	}
+	
+	.followingName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+	
+	.followerName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+	
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 100%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+	
+	  .nav {
+			margin-top:5%;
+			display: block;
+			width: 100%;
+	  }
+	
+	  .nav li ul{
+		display: block;
+			width: 100%;
+	  }
+		
+	.nav li ul li {					
+		list-style-type: none;
+		text-align: left;
+		
+	}
+	
+	.nav li:hover ul{
+		display: block;
+		position: absolute;		
+		list-style-type: none;
+		text-align: left;
+		z-index: 15;
+	}
+	
+	.nav .circle-avatar {
+		display: none !important;
+	}
+	
+	
+	.ppContainer1 {
+		position: absolute;
+		left: 5px !important;
+		bottom: 53% !important;
+	}
+				
+	.myBg1{
+		height: 300px;
+	}
+	
+	.myBg5{
+		height: 300px;
+	}
+
+
+	.profileQuote h4 {
+		font-size: 10px;
+	 }
+	  
+	#pageTitle {
+		text-align: center !important;
+	}
+	
+	#collectionsContainer {
+		margin-top: 10%;
+	}
+		   
+  .ppContainer1 h4 {
+	  background-color: rgba(0,0,0,.4) !important;
+	  color: white !important;
+	  padding: 5px;
+  }
+  
+  .details-wrapper p {
+	  background-color: rgba(0,0,0,.4) !important;
+	  color: white !important;
+	  padding: 5px;
+  }
+		   
+   #sort {
+	   width: 100%;
+   }
+   
+   .bitcoinBtn{
+	   text-align: center !important;
+	   margin-left: auto;
+	   margin-right: auto;
+   }
+   
+   #bitcoinAddress {
+	     text-align: center !important;
+	   margin-left: auto;
+	   margin-right: auto;
+   }
+   
+   .interactions {
+	   text-align: center !important;
+   }
+		
+
+    .postDetails{
+      text-align: center;
+      width: 100%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 60%;
+      left: 0%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+	
+	.commentPicSection {
+		font-size: 10px;
+	}
+
+    
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+ 
+  }
+  
+  @media(min-width:768px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+	.myPhoto {
+	  display: inline;
+	  width:50px;
+	  height:50px;
+	  margin-left: -37px;
+	  z-index: 5;
+	  float: left;
+	}	
+    
+	.postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+	
+	.followerName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+	
+	 .followingName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+    
+	.col-sm-height {
+        display: table-cell;
+        float: none !important;
+    }
+			
+	.profileQuote {
+		position: absolute;
+		bottom: 0px;
+	}
+
+  }
+
+  @media(min-width:992px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+	 .followingName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+	
+	.myPhoto {
+	  display: inline;
+	  width:35px;
+	  height:35px;
+	  margin-left: -25px;
+	  float: left;
+	  z-index: 5;
+	}	
+	
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+	
+	.col-md-height {
+        display: table-cell;
+        float: none !important;
+    }
+	
+	.followerName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+  }
+
+  @media(min-width:1200px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+	
+    .followingName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+	.col-lg-height {
+        display: table-cell;
+        float: none !important;
+    }
+
+	.profileQuote {
+		position: absolute;
+		bottom: 0px;
+	}
+		
+    .followerName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+  
+	
+  }
+
+  @media(min-width:1440px){
+
+	
+	.followerName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }	
+    
+
+    .followingName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+  
+  
+   
+    
+  }
+
+  @media(min-width:1920px){
+
+  
+   .followingName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+  
+     .followerName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+    
+	.profileQuote {
+		position: absolute;
+		bottom: 0px;
+	}
+
+  }
+  
+/* @media(max-width:1199px) and (min-width:992px)
+{
+	.ppic
+	{
+		left: 63px;
+		margin-left: 5%;
+	}
+}
+@media(max-width:991px) and (min-width:961px)
+{
+	.ppic
+	{
+	  left: 9%;
+		margin-left: 19px;
+	}
+}
+@media(max-width:960px) and (min-width:910px)
+{
+	.ppic
+	{
+	  left: 13%;
+		margin-left: 0;
+	}
+} */
+
+
+/*========================================================
+                      collection.php
+=========================================================*/
+#editCollectionName:hover {
+	background-color: rgba(0,0,0, .1);
+	color: white;
+}
+
+#editCollectionName:active{
+	background-color: rgba(0,0,0, .2);
+	color: white;
+}
+
+.myBg5 {
+	height:300px;
+	width: 100%;
+	background-image: url('../images/BackgroundDefault.jpg');
+	background-attachment: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;				
+}
+
+
+ .custTile {
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 2rem;
+	max-width: 50%;
+}
+
+.custTile:hover {
+	cursor: pointer;
+	background-color: lightblue;
+	color: white;
+}
+
+ .row-same-height {
+    display: table;
+    width: 100%;
+}
+
+.col-xs-height {
+    display: table-cell;
+    float: none !important;
+}
+
+.col-top {
+    vertical-align:top;
+}
+
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
+}
+
+.interactions button {
+	height: 40px;
+	width: 40px;
+}
+
+
+.myInfo a {
+	color: white;
+}
+
+
+.myInfo p:hover {
+	background-color: (255,255,255, .8);
+	color: lightblue;
+}
+
+.glyphicon-trash:hover{
+		cursor: pointer;
+		color: lightblue !important;
+}
+
+  .content .postLink {
+	  color: #fff;
+  }
+  
+  
+.modal-dialog {
+	  position: absolute;
+	  width: 450px;
+	  height: 200px;
+	  top: 50%;
+	  left: 47%;
+	  margin: -120px 0 0 -200px;
+  }
+
+
+/*========================================================
+                      createPost.php
+=========================================================*/
+
+.error
+{
+    color: #990000;
+}
+            
+/* Thumbnails */
+            
+.postImageLabel
+{
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -o-appearance: button;
+    -ms-appearance: button;
+    appearance: button;
+    display: inline !important;			
+}
+			
+.postImageRadio
+{
+    display: none;
+}
+
+.postImageThumbnail
+{
+    width: 100%;
+    display: inline !important;		
+}
+
+.postImageSelected
+{
+    outline: 5px solid #C6E48B;
+}
+
+#postImageSelection 
+{
+    max-height: 300px;
+    overflow-x: auto;
+}
+
+
+
+div.circle-avatar
+{
+    /* make it responsive */
+    max-width: 100%;
+    width:100%;
+    height:auto;
+    display:block;
+    /* div height to be the same as width*/
+    padding-top:100%;
+
+    /* make it a cirkle */
+    border-radius:50%;
+
+    /* Centering on image`s center*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    /* it makes the clue thing, takes smaller dimention to fill div */
+    background-size: cover;
+
+    /* it is optional, for making this div centered in parent*/
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+  
+
+
+/*========================================================
+                      home.php
+=========================================================*/
+  
+  #noPosts {
+	  display: none;
+  }
+
+   .glyphicon-trash:hover{
+		cursor: pointer;
+	}
+	
+	.more {
+		margin-bottom: 15%;
+		display: none;
+	}
+	
+	.more:hover {
+		cursor: pointer;
+		background-color: rgba(0,0,0,.2) !important;
+		color: white;
+	}
+	
+	.btn-group {
+	 width: 100%;
+	 padding-top: .5%;		 
+ }
+		 
+ 
+ .btn-group h4 {
+	 display: inline;
+	 padding: 1% 2% 1% 2%;
+	 font-weight: bold;
+ }
+ 
+   .btn-group h4:hover {
+	 background-color: rgba(0,0,0,.1);
+	 cursor: pointer;
+ }
+
+  
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+  }
+
+
+
+  
+  
+/*========================================================
+                      index.php
+=========================================================*/
+
+	* {
+		margin: 0;
+	}
+	html, body {
+		height: 100%;
+	}
+	
+	button{
+		z-index: 60 !important;
+	}
+	.wrapper {
+		min-height: 100%;
+		height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+		height: 100%;
+		margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+	}
+	.footer, .push {
+		height: 155px; /* .push must be the same height as .footer */
+	}
+  
+  
+  .content a {
+	 color: #fff;
+  }
+  
+   .content .postLink{
+	 color: #fff;
+  }
+
+  .links {
+    position: absolute;
+    left: 85%;
+    bottom: 60%;
+    float: right;
+  }
+  
+    .links a{
+	color: black;
+  }
+ 
+
+
+  
+/*========================================================
+                      post.php
+=========================================================*/
+
+
+td .postInfo {
+	padding: 7%;
+	margin: 1%;
+	background-color: #000000;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.favoriteBtnColored {
+	color: red;
+}
+
+.commentImg {
+	width: 50px; 
+	height: 50px;
+}
+	  
+
+  .upvote:hover{
+	  cursor: pointer;
+  }
+    
+
+/*========================================================
+                      profile.php
+=========================================================*/
+
+.editcollection {
+	z-index: 20;
+	cursor: pointer;
+	float: right;
+}
+
+.myInfo {
+	margin: 0; 
+	padding: 0; 
+	z-index: 40;
+}
+
+#heading {
+	clear: left;
+	 z-index: 100;
+	 background-color: rgba(0,0,0,.1);
+}
+
+ .interactions {
+	 z-index: 100;
+ }
+ 
+ #bitcoinAddress {
+	 display: none;
+ }
+ 
+ #bcCopied {
+	 display: none;
+ }
+ 
+ .btn-group h4 button{
+	 	 height: 100%;
+ }
+ 
+ .interactions .btn:hover {
+	 background-color: rgba(0,0,0,.1);
+	 color: white;
+ }
+ 
+.collection {
+    width:150px;
+    height:150px;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+}
+
+.collection:hover {
+	background-color: lightblue;
+	cursor: pointer;
+}
+
+.img-responsive:hover {
+	cursor: pointer;
+	background-color: lightblue;
+	color: white;
+	border: 3px solid lightblue;
+}
+
+.details p {
+	padding-top: 1%;
+}
+
+.details .col-xs-4 {
+	background-color: rgba(0,0,0,.5);
+}
+
+
+.profilePic1 {
+    width:150px;
+    height:150px;
+	border: solid white 2px;
+	display: block;
+	position: relative;
+	top: 90%;
+	z-index: 200;
+}
+
+.profileQuote {
+	width:62%;
+	line-height: 40px;
+	margin-top: -5%;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	text-align: left;
+	z-index: 300;	
+	color: white;
+}
+
+.profileQuote h4 {
+	background-color: rgba(0,0,0, .2);
+}
+
+.myBg1 {
+	height: 300px;
+	width: 100%;
+	background-attachment: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;		
+}
+
+
+.ppContainer1 {
+	position: absolute;
+	left: 15px;
+	bottom: -75px;
+} 
+
+
+/*========================================================
+                      register.php
+=========================================================*/
+#submit:hover {
+	background-color: rgba(117,192,192,.8);
+	color: white; 
+}
+#submit {
+	background-color: #75C0C0; 
+	width: 100%;
+}
+
+#fbLogin h4 {
+	position: absolute;
+	top:20%;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+/*========================================================
+                      viewfollowers.php
+=========================================================*/
+
+
+    .followerName 
+	{
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+  
+    
+/*========================================================
+                      viewfollowing.php
+=========================================================*/
+    
+
+.followingName {
+	text-align: center;
+	width: 75%;
+	font-weight: bold;
+}
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+

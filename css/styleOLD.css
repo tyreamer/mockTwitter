@@ -1,0 +1,8348 @@
+/*========================================================
+                      about.php
+=========================================================*/
+
+.ppContainer{
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.profilePic {
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	display: block;
+	position: relative;
+}
+
+.profileQuote {
+	width:100%;
+	background-color: rgba(0,0,0, .2);
+    height:40px;
+	line-height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	z-index: 15;
+}
+
+
+.interactionContainer {
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.interactionContainer button{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	display: block;
+}
+
+.myBg {
+	height: 30%;
+	width: 100%;
+	background-attachment: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;		
+}
+
+.myInfo {
+	font-weight: bold;
+	background-color: rgba(0,0,0,.1);
+	color: white;
+}
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+
+  .nav li ul{
+	display: none;			
+  }
+
+	.nav li:hover ul{
+	display: block;
+	position: absolute;
+	padding: 10px;
+	background-color: rgba(255,255,255,1);
+	list-style-type: none;
+	text-align: center;
+	z-index: 15;
+	}
+		
+	.nav li ul li {					
+	padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover {
+	background-color: rgba(0,0,0,.2);
+	}
+  
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+   }
+
+
+  .content {
+    position:absolute;
+    height:80%;
+    width:80%;
+    padding: 4% 10% 10% 10%;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    width: 90%;
+    height: 80%;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .links {
+    position: absolute;
+    left: 85%;
+    bottom: 20%;
+    float: right;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .postName {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+  }
+
+  .postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+  }
+
+  .myPhoto {
+    border:2px solid #000;
+    border-radius: 90px;
+    resize: both;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 5;
+  }
+
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: orange;
+  }
+
+  body { padding-top: 50px; }
+  
+  .upvote:hover {
+	  cursor: pointer;
+  }
+  
+  .downvote:hover {
+	  cursor: pointer;
+  }
+  
+  .modal-dialog {
+	  position: absolute;
+	  width: 400px;
+	  height: 200px;
+	  top: 50%;
+	  left: 50%;
+	  margin: -120px 0 0 -200px;
+  }
+  
+  .modalItem { display: inline-block; color: #000;
+	  text-align: center;
+	  font-size: 2em;
+	  padding: 2% 5% 2% 5%;
+  }
+  
+  a:hover {
+	  text-decoration: none;
+  }
+  
+  .modalItem:hover {
+	  background-color: rgba(0,0,0,.2);
+	  border-radius: 10px;
+  }
+
+  @media(max-width:767px){
+
+    body { padding-top: 50px; }
+
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 150%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+	
+	  .nav li ul{
+		display: block;
+			width: 100%;
+	  }
+		
+	.nav li ul li {					
+		list-style-type: none;
+		text-align: left;
+		
+	}
+	
+	.nav li:hover ul{
+		display: block;
+		position: absolute;		
+		list-style-type: none;
+		text-align: left;
+		z-index: 15;
+	}
+	
+	.nav .circle-avatar {
+		display: none !important;
+	}
+		
+
+    .postDetails{
+      text-align: center;
+      width: 60%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 78%;
+      left: 7%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:30px;
+      height:30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      top: 70%;
+      left: 37%;
+      z-index: 5;
+    }
+  }
+  @media(min-width:768px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 83%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 77%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:992px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-left: -20px;
+      margin-top: -20px;
+      top: 64%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1200px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 63%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1440px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 62%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1920px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 65%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 61%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  
+  div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+  
+
+    .link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .nav {
+      font-size: 18px;
+    }
+	
+	.nav button {
+		height: 34px;
+	}
+/*========================================================
+                      collection.php
+=========================================================*/
+#editCollectionName:hover {
+	background-color: rgba(0,0,0, .1);
+	color: white;
+}
+
+#editCollectionName:active{
+	background-color: rgba(0,0,0, .2);
+	color: white;
+}
+
+
+ .custTile {
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 2rem;
+	max-width: 50%;
+}
+
+.custTile:hover {
+	cursor: pointer;
+	background-color: lightblue;
+	color: white;
+}
+
+ .row-same-height {
+    display: table;
+    width: 100%;
+}
+.col-xs-height {
+    display: table-cell;
+    float: none !important;
+}
+@media (min-width: 768px) {
+    .col-sm-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+
+ .col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
+}
+
+.ppContainer{
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.interactions button {
+	height: 40px;
+	width: 40px;
+}
+
+.profilePic {
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	display: block;
+	position: relative;
+}
+
+.profileQuote {
+	width:100%;
+	background-color: rgba(0,0,0, .2);
+    height:40px;
+	line-height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	z-index: 30;
+}
+
+
+.interactionContainer {
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.interactionContainer button{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	display: block;
+}
+
+.myInfo {
+	font-weight: bold;
+	background-color: rgba(0,0,0,.1);
+	color: white;
+}
+
+.myInfo a {
+	color: white;
+}
+
+.myInfo p:hover {
+	background-color: (255,255,255, .8);
+	color: lightblue;
+}
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+
+  .nav li ul{
+	display: none;			
+  }
+
+	.nav li:hover ul{
+	display: block;
+	position: absolute;
+	padding: 10px;
+	background-color: rgba(255,255,255,1);
+	list-style-type: none;
+	text-align: center;
+	z-index: 15;
+	}
+		
+	.nav li ul li {					
+	padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover {
+	background-color: rgba(0,0,0,.2);
+	}
+	
+	.glyphicon-trash:hover{
+		cursor: pointer;
+	}
+  
+  
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+   }
+
+
+  .content {
+    position:absolute;
+    height:80%;
+    width:80%;
+    padding: 4% 10% 10% 10%;
+  }
+  
+  .content .postLink {
+	  color: #fff;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    width: 90%;
+    height: 80%;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .links {
+    position: absolute;
+    left: 85%;
+    bottom: 20%;
+    float: right;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .postName {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+  }
+
+  .postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+  }
+
+ .myPhoto {
+      border:1px solid #fff;
+    border-radius: 90px;
+    resize: both;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 5;
+  }
+
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: orange;
+  }
+
+  body { padding-top: 50px; }
+  
+  .upvote:hover {
+	  cursor: pointer;
+  }
+  
+  .downvote:hover {
+	  cursor: pointer;
+  }
+  
+  .modal-dialog {
+	  position: absolute;
+	  width: 450px;
+	  height: 200px;
+	  top: 50%;
+	  left: 47%;
+	  margin: -120px 0 0 -200px;
+  }
+  
+  .modalItem { display: inline-block; color: #000;
+	  text-align: center;
+	  font-size: 2em;
+	  padding: 2% 5% 2% 5%;
+  }
+  
+  a:hover {
+	  text-decoration: none;
+  }
+  
+  .modalItem:hover {
+	  background-color: rgba(0,0,0,.2);
+	  border-radius: 10px;
+  }
+
+  @media(max-width:767px){
+
+    body { padding-top: 50px; }
+
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 150%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 60%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 75%;
+      left: 7%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:30px;
+      height:30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      top: 70%;
+      left: 37%;
+      z-index: 5;
+    }
+  }
+  @media(min-width:768px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 83%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+  .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 77%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:992px){
+
+   .col-md-height {
+        display: table-cell;
+        float: none !important;
+    }
+  
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 71%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-left: -20px;
+      margin-top: -20px;
+      top: 64%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1200px){
+	.col-lg-height {
+        display: table-cell;
+        float: none !important;
+    }
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+  .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 63%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1440px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+   .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 62%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1920px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 65%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+   .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 61%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  
+  div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+  
+
+    .link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .nav {
+      font-size: 18px;
+    }
+/*========================================================
+                      createPost.php
+=========================================================*/
+body
+{
+    background-color: #fff;
+}
+.error
+{
+    color: #990000;
+}
+            
+/* Thumbnails */
+            
+.postImageLabel
+{
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -o-appearance: button;
+    -ms-appearance: button;
+    appearance: button;
+    display: inline !important;			
+}
+			
+.postImageRadio
+{
+    display: none;
+}
+
+.postImageThumbnail
+{
+    width: 100%;
+    display: inline !important;		
+}
+
+.postImageSelected
+{
+    outline: 5px solid #C6E48B;
+}
+
+#postImageSelection 
+{
+    max-height: 300px;
+    overflow-x: auto;
+}
+
+.nav li ul
+{
+    display: none;			
+}
+
+.nav li:hover ul
+{
+    display: block;
+    position: absolute;
+    padding: 10px;
+    background-color: #fff;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav li ul li
+{					
+    padding: 5px 15px 5px 15px;
+}
+
+ul li ul li:hover
+{
+    background-color: rgba(0,0,0,.2);
+}
+ .nav 
+{
+    font-size: 18px;
+}
+
+.nav .btn-default
+{
+    height:34px;
+}
+
+  div.circle-avatar
+{
+    /* make it responsive */
+    max-width: 100%;
+    width:100%;
+    height:auto;
+    display:block;
+    /* div height to be the same as width*/
+    padding-top:100%;
+
+    /* make it a cirkle */
+    border-radius:50%;
+
+    /* Centering on image`s center*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    /* it makes the clue thing, takes smaller dimention to fill div */
+    background-size: cover;
+
+    /* it is optional, for making this div centered in parent*/
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*========================================================
+                      editProfile.php
+=========================================================*/
+.ppContainer{
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.profilePic {
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	display: block;
+	position: relative;
+}
+
+.profileQuote {
+	width:100%;
+	background-color: rgba(0,0,0, .2);
+    height:40px;
+	line-height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	z-index: 15;
+}
+
+
+.interactionContainer {
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.interactionContainer button{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	display: block;
+}
+
+.myBg {
+	height: 30%;
+	width: 100%;
+	background-attachment: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;		
+}
+
+.myInfo {
+	font-weight: bold;
+	background-color: rgba(0,0,0,.1);
+	color: white;
+}
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+
+  .nav li ul{
+	display: none;			
+  }
+
+	.nav li:hover ul{
+	display: block;
+	position: absolute;
+	padding: 10px;
+	background-color: rgba(255,255,255,1);
+	list-style-type: none;
+	text-align: center;
+	z-index: 15;
+	}
+		
+	.nav li ul li {					
+	padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover {
+	background-color: rgba(0,0,0,.2);
+	}
+  
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+   }
+
+
+  .content {
+    position:absolute;
+    height:80%;
+    width:80%;
+    padding: 4% 10% 10% 10%;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    width: 90%;
+    height: 80%;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .links {
+    position: absolute;
+    left: 85%;
+    bottom: 20%;
+    float: right;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .postName {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+  }
+
+  .postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+  }
+
+  .myPhoto {
+    border:2px solid #000;
+    border-radius: 90px;
+    resize: both;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 5;
+  }
+
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: orange;
+  }
+
+  body { padding-top: 50px; }
+  
+  .upvote:hover {
+	  cursor: pointer;
+  }
+  
+  .downvote:hover {
+	  cursor: pointer;
+  }
+  
+  .modal-dialog {
+	  position: absolute;
+	  width: 400px;
+	  height: 200px;
+	  top: 50%;
+	  left: 50%;
+	  margin: -120px 0 0 -200px;
+  }
+  
+  .modalItem { display: inline-block; color: #000;
+	  text-align: center;
+	  font-size: 2em;
+	  padding: 2% 5% 2% 5%;
+  }
+  
+  a:hover {
+	  text-decoration: none;
+  }
+  
+  .modalItem:hover {
+	  background-color: rgba(0,0,0,.2);
+	  border-radius: 10px;
+  }
+
+  @media(max-width:767px){
+
+    body { padding-top: 50px; }
+
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 150%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+	
+	  .nav li ul{
+		display: block;
+			width: 100%;
+	  }
+		
+	.nav li ul li {					
+		list-style-type: none;
+		text-align: left;
+		
+	}
+	
+	.nav li:hover ul{
+		display: block;
+		position: absolute;		
+		list-style-type: none;
+		text-align: left;
+		z-index: 15;
+	}
+	
+	.nav .circle-avatar {
+		display: none !important;
+	}
+		
+
+    .postDetails{
+      text-align: center;
+      width: 60%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 78%;
+      left: 7%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:30px;
+      height:30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      top: 70%;
+      left: 37%;
+      z-index: 5;
+    }
+  }
+  @media(min-width:768px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 83%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 77%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:992px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-left: -20px;
+      margin-top: -20px;
+      top: 64%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1200px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 63%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1440px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 62%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1920px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 65%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 61%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  
+  div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+  
+
+    .link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .nav {
+      font-size: 18px;
+    }
+	
+	.nav button {
+		height: 34px;
+	}
+/*========================================================
+                      home.php
+=========================================================*/
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+  
+  #noPosts {
+	  display: none;
+  }
+
+    .nav li ul
+		{
+			display: none;			
+		}
+
+	.nav li:hover ul
+		{
+			display: block;
+			position: absolute;
+			padding: 10px;
+			background-color: #fff;
+			list-style-type: none;
+			text-align: center;
+		}
+		
+	.nav li ul li {					
+			padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover
+	{
+		background-color: rgba(0,0,0,.2);
+	}
+	
+	.nav .btn-default {
+		height: 34px;
+	}
+	
+	.glyphicon-trash:hover{
+		cursor: pointer;
+	}
+	
+	.more {
+		margin-bottom: 15%;
+		display: none;
+	}
+	
+	.more:hover {
+		cursor: pointer;
+		background-color: rgba(0,0,0,.2) !important;
+		color: white;
+	}
+	
+		 .btn-group {
+	 width: 100%;
+	 padding-top: .5%;		 
+ }
+ 
+ .btn-group h4 {
+	 display: inline;
+	 padding: 1% 2% 1% 2%;
+	 font-weight: bold;
+ }
+ 
+  
+ .btn-group h4:hover {
+	 background-color: rgba(0,0,0,.1);
+	 cursor: pointer;
+ }
+  
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+  }
+
+
+  .content {
+    position:absolute;
+    height:80%;
+    width:80%;
+    padding: 4% 10% 10% 10%;
+  }
+  .content .postLink{
+	 color: #fff;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    width: 90%;
+    height: 80%;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .links {
+    position: absolute;
+    left: 85%;
+    bottom: 20%;
+    float: right;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .postName {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+  }
+
+  .postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+  }
+
+  .myPhoto {
+      border:1px solid #fff;
+    border-radius: 90px;
+    resize: both;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 5;
+  }
+
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: orange;
+  }
+
+  body { padding-top: 50px; }
+  
+  .upvote:hover {
+	  cursor: pointer;
+  }
+  
+  .downvote:hover {
+	  cursor: pointer;
+  }
+  
+  .modal-dialog {
+	  position: absolute;
+	  width: 450px;
+	  height: 200px;
+	  top: 50%;
+	  left: 47%;
+	  margin: -120px 0 0 -200px;
+  }
+  .modalItem { display: inline-block; color: #000;
+	  text-align: center;
+	  font-size: 2em;
+	  padding: 2% 5% 2% 5%;
+  }
+  
+  a:hover {
+	  text-decoration: none;
+  }
+  
+  .modalItem:hover {
+	  background-color: rgba(0,0,0,.2);
+	  border-radius: 10px;
+  }
+
+  @media(max-width:767px){
+
+    body { padding-top: 50px; }
+
+		  .nav li ul{
+		display: block;
+			width: 100%;
+	  }
+		
+	.nav li ul li {					
+		list-style-type: none;
+		text-align: left;
+		
+	}
+	
+	.nav li:hover ul{
+		display: block;
+		position: absolute;		
+		list-style-type: none;
+		text-align: left;
+		z-index: 15;
+	}
+	
+	.nav .circle-avatar {
+		display: none !important;
+	}
+	
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 150%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 60%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 75%;
+      left: 7%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:30px;
+      height:30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      top: 70%;
+      left: 37%;
+      z-index: 5;
+    }
+  }
+  @media(min-width:768px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 83%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+ .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 77%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:992px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 71%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+	  background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+   .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-left: -20px;
+      margin-top: -20px;
+      top: 64%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1200px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+  .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 63%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1440px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+   .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 62%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1920px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 65%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 61%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  
+  div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+  
+
+    .link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+/*========================================================
+                      index.php
+=========================================================*/
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 155px; /* .push must be the same height as .footer */
+}
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+  }
+
+
+  .content {
+    position:absolute;
+    height:80%;
+    width:80%;
+    padding: 4% 10% 10% 10%;
+  }
+  
+  .content a {
+	 color: #fff;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    width: 90%;
+    height: 80%;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .links {
+    position: absolute;
+    left: 85%;
+    bottom: 30%;
+    float: right;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .postName {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+  }
+
+  .postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+  }
+
+.myPhoto {
+      border:1px solid #fff;
+    border-radius: 90px;
+    resize: both;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 5;
+  }
+
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: yellow;
+  }
+
+  body { padding-top: 50px; }
+
+  @media(max-width:767px){
+
+  	  .nav {
+			margin-top:5%;
+			display: block;
+			width: 100%;
+	  }
+	  
+    body { padding-top: 50px; }
+
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 150%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 60%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 75%;
+      left: 7%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 0%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:30px;
+      height:30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      top: 70%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:768px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 83%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 0%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+ .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 77%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:992px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 71%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 0%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+	
+.myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-left: -20px;
+      margin-top: -20px;
+      top: 64%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1200px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 0%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 63%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1440px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 0%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+  .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 62%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1920px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 65%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 0%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+   .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 61%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+.link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .nav {
+      font-size: 18px;
+    }
+	
+	.nav .btn-default {
+		height: 34px;
+	}
+/*========================================================
+                      post.php
+=========================================================*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+td .postInfo {
+	padding: 7%;
+	margin: 1%;
+	background-color: #000000;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.favoriteBtnColored {
+	color: red;
+}
+
+.commentImg {
+	border-radius: 50%; 
+	width: 100px; 
+	height: 100px;
+}
+
+ 	.more {
+		margin-bottom: 15%;
+	}
+	.more:hover {
+		cursor: pointer;
+		background-color: rgba(0,0,0,.2) !important;
+		color: white;
+	}
+
+.links a{
+	color: black;
+}
+
+.nav li ul
+		{
+			display: none;			
+		}
+
+	.nav li:hover ul
+		{
+			display: block;
+			position: absolute;
+			padding: 10px;
+			background-color: rgba(0,0,0,.1);
+			list-style-type: none;
+			text-align: center;
+		}
+		
+	.nav li ul li {					
+			padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover
+	{
+		background-color: rgba(0,0,0,.2);
+	}
+
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+  }
+
+
+  .content {
+    position:absolute;
+    height:80%;
+    width:80%;
+	margin-left: 11%;
+    padding: 0% 10% 10% 10%;
+  }
+  
+  .content .postLink {
+	  color: #fff;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    width: 90%;
+    height: 80%;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .upvote:hover{
+	  cursor: pointer;
+  }
+  
+  .downvote:hover {
+	  cursor: pointer;
+  }
+  
+    .links {
+    position: absolute;
+    left: 85%;
+    bottom: 20%;
+    float: right;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+  
+  .squareLinkItem:hover {
+	  cursor: pointer;
+	   color: lightblue;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .postName {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+  }
+  
+  .comments {
+	  margin-top: -8%;
+	  z-index: 10;
+	  background-color: #fff;
+  }
+
+  .postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+	margin-left: 11%;
+  }
+
+  .myPhoto {
+      border:1px solid #fff;
+    border-radius: 90px;
+    resize: both;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    z-index: 5;
+	margin-left: 11%;
+  }
+
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: orange;
+  }
+
+  .glyphicon-trash:hover {
+	  cursor: pointer;
+	  color: lightblue !important;
+  }
+  
+ @media(max-width:767px){
+
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 150%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+	
+	#body-wrapper {
+		padding-top: 10%;		
+	}
+	
+	.commentImg{
+		width: 50px;
+		height: 50px;
+	}
+	
+	.commentPicSection {
+		font-size: 10px;
+	}
+
+    .postDetails{
+      text-align: center;
+      width: 60%;
+      height: auto;
+	  margin-left: 0%;
+      line-height: 15px;
+      max-width:80%;
+      top: 65%;
+      left: 7%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+	
+	.content {
+		margin-left: 0%;
+	}
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:30px;
+      height:30px;
+      margin-top: -35px;
+      margin-left: -15px;
+      top: 65%;
+      left: 37%;
+      z-index: 5;
+    }
+	
+	
+	
+  }
+  @media(min-width:768px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+	   margin-left: 0%;
+      max-width:80%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+	.content {
+		  margin-left: 0%;
+	}
+	
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+  .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -40px;
+      margin-left: -20px;
+      top: 75%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:992px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+	  margin-left: 0%;
+      top: 60%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+	.content {
+		margin-left: 0%;
+	}
+	
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-left: -20px;
+      margin-top: -40px;
+      top: 59%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1200px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+	  margin-left: 0%;
+      top: 63%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+	.content {
+		margin-left: 0%;
+	}
+	
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+  .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 58%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1440px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+	  margin-left: 0%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 60%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+	.content {
+		margin-left: 0%;
+	}
+	
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 57%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1920px){
+
+    .square {
+      position: relative;
+      width: 100%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+	  margin-left: 11%;
+      top: 60%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+	
+	.content {
+		margin-left: 11%;
+	}
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      margin: 0 auto;
+	  
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+ .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      top: 56%;
+      left: 48%;
+      z-index: 5;
+    }
+
+  }
+
+  
+  div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+  
+
+    .link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .nav {
+      font-size: 18px;
+    }
+
+/*========================================================
+                      profile.php
+=========================================================*/
+
+.editcollection {
+	z-index: 20;
+	cursor: pointer;
+	float: right;
+}
+
+.nav .btn-default {
+		height:34px;
+	}
+
+.myInfo {
+	margin: 0; 
+	padding: 0; 
+	z-index: 40;
+}
+
+#heading {
+	clear: left;
+	 z-index: 100;
+	 background-color: rgba(0,0,0,.1);
+}
+
+ .interactions {
+	 z-index: 100;
+ }
+ 
+ #bitcoinAddress {
+	 display: none;
+ }
+ 
+ .more {
+		margin-bottom: 50px;
+		display: none;
+	}
+ 	
+	.more:hover {
+		cursor: pointer;
+		background-color: rgba(0,0,0,.2) !important;
+		color: white;
+		
+	}
+ 
+ #bcCopied {
+	 display: none;
+ }
+ 
+ .btn-group {
+	 width: 100%;
+	 padding-top: .5%;		 
+ }
+ 
+ .btn-group h4 {
+	 display: inline;
+	 padding: 1% 2% 1% 2%;
+	 font-weight: bold;
+ }
+ .btn-group h4 button{
+	 	 height: 100%;
+ }
+ 
+ 
+ .btn-group h4:hover {
+	 background-color: rgba(0,0,0,.1);
+	 cursor: pointer;
+ }
+ 
+ .interactions .btn:hover {
+	 background-color: rgba(0,0,0,.1);
+	 color: white;
+ }
+ 
+.collection {
+    width:150px;
+    height:150px;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+}
+.collection:hover {
+	background-color: lightblue;
+	cursor: pointer;
+}
+
+.img-responsive:hover {
+	cursor: pointer;
+	background-color: lightblue;
+	color: white;
+	border: 3px solid lightblue;
+}
+
+ .row-same-height {
+    display: table;
+    width: 100%;
+}
+.col-xs-height {
+    display: table-cell;
+    float: none !important;
+}
+
+.details p {
+	padding-top: 1%;
+}
+
+.details .col-xs-4 {
+	background-color: rgba(0,0,0,.5);
+}
+  div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+  
+
+    .link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .nav {
+      font-size: 18px;
+    }
+	
+	button{
+	z-index: 60 !important;
+	}
+
+	
+
+ .col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
+}
+
+
+
+.profilePic1 {
+    width:200px;
+    height:200px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	border: solid white 2px;
+	display: block;
+	position: relative;
+	top: 90%;
+	z-index: 200;
+}
+
+.profileQuote {
+	width:62%;
+	line-height: 40px;
+	margin-top: -5%;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	text-align: left;
+	z-index: 300;	
+	color: white;
+
+}
+
+.profileQuote h4 {
+	background-color: rgba(0,0,0, .2);
+}
+
+.myBg1 {
+	height: 40%;
+	width: 100%;
+	background-attachment: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;		
+}
+
+.myInfo {
+	font-weight: bold;
+	background-color: rgba(0,0,0,.1);
+	color: white;
+}
+
+.myInfo a {
+	color: white;
+}
+
+.myInfo p:hover {
+	background-color: (255,255,255, .8);
+	color: lightblue;
+}
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+
+  .nav li ul{
+	display: none;			
+  }
+
+	.nav li:hover ul{
+	display: block;
+	position: absolute;
+	padding: 10px;
+	background-color: rgba(255,255,255,1);
+	list-style-type: none;
+	text-align: center;
+	z-index: 15;
+	}
+		
+	.nav li ul li {					
+	padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover {
+	background-color: rgba(0,0,0,.2);
+	}
+	
+	.glyphicon-trash:hover{
+		cursor: pointer;
+	}
+  
+  
+  .square {
+    float:left;
+    position: relative;
+	max-width: 100%;
+    padding-bottom : 132%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+   }
+
+
+  .content {
+    position:absolute;
+    height:80%;
+    width:100%;
+  }
+  
+  .content .postLink {
+	  color: #fff;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .links {
+    position: absolute;
+    left: 85%;
+    bottom: 100px;
+    float: right;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .postName {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+  }
+
+  .postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+  }
+
+  
+  .myPhoto {
+    border:2px solid #fff;
+    border-radius: 90px;
+    resize: both;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 5;
+  }
+
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: orange;
+  }
+
+  body { padding-top: 50px; }
+  
+  .upvote:hover {
+	  cursor: pointer;
+  }
+  
+  .downvote:hover {
+	  cursor: pointer;
+  }
+  
+  .modal-dialog {
+	  position: absolute;
+	  width: 450px;
+	  height: 200px;
+	  top: 50%;
+	  left: 47%;
+	  margin: -120px 0 0 -200px;
+  }
+  
+  .modalItem { display: inline-block; color: #000;
+	  text-align: center;
+	  font-size: 2em;
+	  padding: 2% 5% 2% 5%;
+  }
+  
+  a:hover {
+	  text-decoration: none;
+  }
+  
+  .modalItem:hover {
+	  background-color: rgba(0,0,0,.2);
+	  border-radius: 10px;
+  }
+  
+  @media(max-width:767px){
+	  
+	 .profileQuote h4 {
+			font-size: 10px;
+	 }
+	  
+	#pageTitle {
+			   text-align: center !important;
+		   }
+		   
+		  .ppContainer1 h4 {
+			  background-color: rgba(0,0,0,.4) !important;
+			  color: white !important;
+			  padding: 5px;
+		  }
+		   
+   #sort {
+	   width: 100%;
+   }
+   
+   .bitcoinBtn{
+	   text-align: center !important;
+	   margin-left: auto;
+	   margin-right: auto;
+   }
+   
+   #bitcoinAddress {
+	     text-align: center !important;
+	   margin-left: auto;
+	   margin-right: auto;
+   }
+   
+   .interactions {
+	   text-align: center !important;
+   }
+   
+    body { padding-top: 50px; }
+
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 150%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+	
+	  .nav li ul{
+		display: block;
+			width: 100%;
+	  }
+		
+	.nav li ul li {					
+		list-style-type: none;
+		text-align: left;
+		
+	}
+	
+	.nav li:hover ul{
+		display: block;
+		position: absolute;		
+		list-style-type: none;
+		text-align: left;
+		z-index: 15;
+	}
+	
+	.nav .circle-avatar {
+		display: none !important;
+	}
+	
+	.ppContainer1 {
+		position: absolute;
+		left: 5px !important;
+		bottom: 53% !important;
+	}
+		
+	.profilePic {
+		width: 100px;
+		height: 100px;
+	}
+		
+	.myBg1{
+		height: 300px;
+	}
+
+    .postDetails{
+      text-align: center;
+      width: 60%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 75%;
+      left: 7%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+	
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:30px;
+      height:30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      top: 70%;
+      left: 37%;
+      z-index: 5;
+    }
+  }
+  
+   @media(max-width:768px){
+	#collectionsContainer {
+		margin-top: 10%;
+	}
+   }
+  
+  @media(min-width:768px){
+
+  .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+	
+
+	
+	.profilePic {
+		height: 100px;
+		width: 100px;
+	}
+	
+	.profileQuote {
+		position: absolute;
+		bottom: 0px;
+	}
+	
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 83%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 77%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:960px){
+
+  
+   .col-md-height {
+        display: table-cell;
+        float: none !important;
+    }
+  
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 71%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+	
+
+	
+	.profileQuote {
+		position: absolute;
+		bottom: 0px;
+	}
+		
+	.profilePic {
+		height: 150px;
+		width: 150px;
+	}
+	
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-left: -20px;
+      margin-top: -20px;
+      top: 64%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+   
+  @media(min-width:1200px){
+	.col-lg-height {
+        display: table-cell;
+        float: none !important;
+    }
+	
+	
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+	
+
+	
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+	
+	.profileQuote {
+		position: absolute;
+		bottom: 0px;
+	}
+	
+	.profilePic {
+		height: 200px;
+		width: 200px;
+	}
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 63%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1440px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 62%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1920px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+	
+	.profileQuote {
+		position: absolute;
+		bottom: 0px;
+	}
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 65%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #fff;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 61%;
+      left: 37%;
+      z-index: 5;
+    }
+	
+	
+
+  }
+
+  	.ppContainer1 {
+		position: absolute;
+		left: 15px;
+		bottom: -75px;
+	}
+
+	@media(max-width:1199px) and (min-width:992px)
+{
+	.ppic
+	{
+		    left: 63px;
+    margin-left: 8%;
+	}
+}
+@media(max-width:991px) and (min-width:961px)
+{
+	.ppic
+	{
+  left: 9%;
+    margin-left: 19px;
+}
+}
+@media(max-width:960px) and (min-width:910px)
+{
+	.ppic
+	{
+  left: 13%;
+    margin-left: 0;
+}
+}
+/*========================================================
+                      message.php
+=========================================================*/
+
+.profilePic {
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	display: block;
+	position: relative;
+}
+
+ 	.more {
+		margin-bottom: 50px;
+		display: none;
+	}
+	.more:hover {
+		cursor: pointer;
+		background-color: rgba(0,0,0,.2) !important;
+		color: white;
+	}
+
+  .content a {
+	 color: #fff;
+  }
+  
+
+.friendName {
+	position: relative;
+	bottom: 30%;
+}
+
+.ppContainer{
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.profilePic {
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	display: block;
+	position: relative;
+}
+
+.profileQuote {
+	width:100%;
+	background-color: rgba(0,0,0, .2);
+    height:40px;
+	line-height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	z-index: 30;
+}
+
+.myInfo {
+	font-weight: bold;
+	background-color: rgba(0,0,0,.1);
+	color: white;
+}
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+
+  .nav li ul{
+	display: none;			
+  }
+
+	.nav li:hover ul{
+	display: block;
+	position: absolute;
+	padding: 10px;
+	background-color: rgba(255,255,255,1);
+	list-style-type: none;
+	text-align: center;
+	z-index: 15;
+	}
+		
+	.nav li ul li {					
+	padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover {
+	background-color: rgba(0,0,0,.2);
+	}
+	
+	.glyphicon-trash:hover{
+		cursor: pointer;
+	}
+  
+  
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+   }
+
+
+  .content {
+    position:absolute;
+    height:80%;
+    width:80%;
+    padding: 4% 10% 10% 10%;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    width: 90%;
+    height: 80%;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .lastMesage {
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	right: 22%;
+	background-color: rgba(0,0,0, .4);
+	width: 80%;
+	margin: 0px 5px 0px 5px;
+	color: white;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .postName {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+  }
+
+  .postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+  }
+
+  .myPhoto {
+    border:2px solid #000;
+    border-radius: 90px;
+    resize: both;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 5;
+  }
+
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: orange;
+  }
+  
+  .upvote:hover {
+	  cursor: pointer;
+  }
+  
+  .downvote:hover {
+	  cursor: pointer;
+  }
+  
+  .modal-dialog {
+	  position: absolute;
+	  width: 400px;
+	  height: 200px;
+	  top: 50%;
+	  left: 50%;
+	  margin: -120px 0 0 -200px;
+  }
+  
+  .modalItem { display: inline-block; color: #000;
+	  text-align: center;
+	  font-size: 2em;
+	  padding: 2% 5% 2% 5%;
+  }
+  
+  a:hover {
+	  text-decoration: none;
+  }
+  
+  .modalItem:hover {
+	  background-color: rgba(0,0,0,.2);
+	  border-radius: 10px;
+  }
+
+  @media(max-width:767px){
+
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 150%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 60%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 78%;
+      left: 7%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:30px;
+      height:30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      top: 70%;
+      left: 37%;
+      z-index: 5;
+    }
+  }
+  @media(min-width:768px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 83%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 77%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:992px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-left: -20px;
+      margin-top: -20px;
+      top: 64%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1200px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 63%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1440px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 62%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1920px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 65%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .postName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 61%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  
+  div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+  
+
+    .link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .nav {
+      font-size: 18px;
+    }
+
+/*========================================================
+                      register.php
+=========================================================*/
+#submit:hover {
+	background-color: rgba(117,192,192,.8);
+	color: white; 
+}
+#submit {
+	background-color: #75C0C0; 
+	width: 100%;
+}
+
+#fbLogin h4 {
+	position: absolute;
+	top:20%;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+@media(max-width:767px){
+	
+	#fbLogin h4 {
+		top: 15%;
+	}
+	
+	.newAccount  {
+		font-size: 10px;
+	}
+}
+/*========================================================
+                      viewfollowers.php
+=========================================================*/
+.profilePic {
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	display: block;
+	position: relative;
+}
+
+.friendName {
+	position: relative;
+	bottom: 30%;
+}
+
+.ppContainer{
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.profilePic {
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	display: block;
+	position: relative;
+}
+
+.profileQuote {
+	width:100%;
+	background-color: rgba(0,0,0, .2);
+    height:40px;
+	line-height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	z-index: 30;
+}
+
+.myInfo {
+	font-weight: bold;
+	background-color: rgba(0,0,0,.1);
+	color: white;
+}
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+
+  .nav li ul{
+	display: none;			
+  }
+  
+  .nav .btn-default {
+		height:34px;
+	}
+
+	.nav li:hover ul{
+	display: block;
+	position: absolute;
+	padding: 10px;
+	background-color: rgba(255,255,255,1);
+	list-style-type: none;
+	text-align: center;
+	z-index: 15;
+	}
+		
+	.nav li ul li {					
+	padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover {
+	background-color: rgba(0,0,0,.2);
+	}
+	
+	.glyphicon-trash:hover{
+		cursor: pointer;
+	}
+  
+  
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+   }
+
+
+  .content {
+    position:absolute;
+    height:80%;
+    width:80%;
+    padding: 4% 10% 10% 10%;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    width: 90%;
+    height: 80%;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .lastMesage {
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	right: 22%;
+	background-color: rgba(0,0,0, .4);
+	width: 80%;
+	margin: 0px 5px 0px 5px;
+	color: white;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .followerName {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+  }
+
+  .postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+  }
+
+  .myPhoto {
+    border:2px solid #000;
+    border-radius: 90px;
+    resize: both;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 5;
+  }
+
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: orange;
+  }
+  
+  .upvote:hover {
+	  cursor: pointer;
+  }
+  
+  .downvote:hover {
+	  cursor: pointer;
+  }
+  
+  .modal-dialog {
+	  position: absolute;
+	  width: 400px;
+	  height: 200px;
+	  top: 50%;
+	  left: 50%;
+	  margin: -120px 0 0 -200px;
+  }
+  
+  .modalItem { display: inline-block; color: #000;
+	  text-align: center;
+	  font-size: 2em;
+	  padding: 2% 5% 2% 5%;
+  }
+  
+  a:hover {
+	  text-decoration: none;
+  }
+  
+  .modalItem:hover {
+	  background-color: rgba(0,0,0,.2);
+	  border-radius: 10px;
+  }
+
+  @media(max-width:767px){
+
+  body {
+	  margin-top: 100px;	  
+  }
+  
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 150%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 60%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 78%;
+      left: 7%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followerName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:30px;
+      height:30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      top: 70%;
+      left: 37%;
+      z-index: 5;
+    }
+  }
+  @media(min-width:768px){
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 83%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followerName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 77%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:992px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followerName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-left: -20px;
+      margin-top: -20px;
+      top: 64%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1200px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followerName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 63%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1440px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followerName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 62%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1920px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 65%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followerName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 61%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  
+  div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+  
+
+    .link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .nav {
+      font-size: 18px;
+    }
+    
+/*========================================================
+                      viewfollowing.php
+=========================================================*/
+    
+.profilePic {
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	display: block;
+	position: relative;
+}
+
+.friendName {
+	position: relative;
+	bottom: 30%;
+}
+
+.ppContainer{
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+
+.profilePic {
+    width:150px;
+    height:150px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+	border: solid white 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	display: block;
+	position: relative;
+}
+
+.profileQuote {
+	width:100%;
+	background-color: rgba(0,0,0, .2);
+    height:40px;
+	line-height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	z-index: 30;
+}
+
+.myInfo {
+	font-weight: bold;
+	background-color: rgba(0,0,0,.1);
+	color: white;
+}
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+
+  .nav li ul{
+	display: none;			
+  }
+  
+  .nav .btn-default {
+		height:34px;
+	}
+
+	.nav li:hover ul{
+	display: block;
+	position: absolute;
+	padding: 10px;
+	background-color: rgba(255,255,255,1);
+	list-style-type: none;
+	text-align: center;
+	z-index: 15;
+	}
+		
+	.nav li ul li {					
+	padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover {
+	background-color: rgba(0,0,0,.2);
+	}
+	
+	.glyphicon-trash:hover{
+		cursor: pointer;
+	}
+  
+  
+  .square {
+    float:left;
+    position: relative;
+    width: 132%;
+    padding-bottom : 132%;
+    margin:1.66%;
+    display: inline;
+    background-color: white;
+    overflow:hidden;
+   }
+
+
+  .content {
+    position:absolute;
+    height:80%;
+    width:80%;
+    padding: 4% 10% 10% 10%;
+  }
+  
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  .content .rs{
+    width:auto;
+    height:auto;
+    max-height:80%;
+    max-width:100%;
+    float: left;
+  }
+
+  .bg{
+    width: 90%;
+    height: 80%;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid;
+    background-size:cover;
+  }
+
+  .lastMesage {
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	right: 22%;
+	background-color: rgba(0,0,0, .4);
+	width: 80%;
+	margin: 0px 5px 0px 5px;
+	color: white;
+  }
+
+  .squareLinkItem {
+    padding-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .squareLinkItem p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .followingName {
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+  }
+
+  .postDetails{
+    text-align: center;
+    width: 80%;
+    height: auto;
+    line-height: 15px;
+    max-width:80%;
+    position: absolute;
+    bottom: 25%;
+    background-color: #fff;
+  }
+
+  .myPhoto {
+    border:2px solid #000;
+    border-radius: 90px;
+    resize: both;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 5;
+  }
+
+  .glpyhLg {
+    font-size: 2em;
+  }
+
+  .favoriteBtnColored {
+    color: orange;
+  }
+  
+  .upvote:hover {
+	  cursor: pointer;
+  }
+  
+  .downvote:hover {
+	  cursor: pointer;
+  }
+  
+  .modal-dialog {
+	  position: absolute;
+	  width: 400px;
+	  height: 200px;
+	  top: 50%;
+	  left: 50%;
+	  margin: -120px 0 0 -200px;
+  }
+  
+  .modalItem { display: inline-block; color: #000;
+	  text-align: center;
+	  font-size: 2em;
+	  padding: 2% 5% 2% 5%;
+  }
+  
+  a:hover {
+	  text-decoration: none;
+  }
+  
+  .modalItem:hover {
+	  background-color: rgba(0,0,0,.2);
+	  border-radius: 10px;
+  }
+
+  @media(max-width:767px){
+
+	 body {
+	  margin-top: 100px;	  
+	}
+  
+    .square {
+      float:left;
+      position: relative;
+      right: 5%;
+      width: 150%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 60%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 78%;
+      left: 7%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 3px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followingName {
+      position: relative;
+      left: -8%;
+      top: -10%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:30px;
+      height:30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      top: 70%;
+      left: 37%;
+      z-index: 5;
+    }
+  }
+  @media(min-width:768px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 100%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:80%;
+      top: 83%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followingName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 77%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:992px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      margin-top: 10px;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followingName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-left: -20px;
+      margin-top: -20px;
+      top: 64%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1200px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 75%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followingName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 63%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1440px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 70%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followingName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 62%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  @media(min-width:1920px){
+
+    .square {
+      float:left;
+      position: relative;
+      width: 132%;
+      padding-bottom : 132%;
+      margin:1.66%;
+      display: inline;
+      background-color: white;
+      overflow:hidden;
+    }
+
+    .postDetails{
+      text-align: center;
+      width: 54%;
+      height: auto;
+      line-height: 15px;
+      max-width:100%;
+      top: 65%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 1);;
+      z-index: 4;
+    }
+
+    .content .rs{
+      width:auto;
+      height:auto;
+      max-height:80%;
+      max-width:100%;
+      float: left;
+    }
+
+    .bg{
+      width: 88%;
+      padding-bottom: 88%;
+      float: left;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border: solid;
+      background-size:cover;
+    }
+
+    .links {
+      position: absolute;
+      left: 85%;
+      top: 5%;
+      float: right;
+    }
+
+    .squareLinkItem {
+      padding-bottom: 4px;
+      background-color: #fff;
+    }
+
+    .squareLinkItem p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .followingName {
+      position: relative;
+      left: -9%;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+    }
+
+    .myPhoto {
+      border:1px solid #000;
+      border-radius: 90px;
+      resize: both;
+      width:40px;
+      height:40px;
+      margin-top: -20px;
+      margin-left: -20px;
+      top: 61%;
+      left: 37%;
+      z-index: 5;
+    }
+
+  }
+
+  
+  div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+  
+
+    .link {
+      float: left;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .nav {
+      font-size: 18px;
+    }
+    /*========================================================
+                      viewmessages.php
+=========================================================*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+td .postInfo {
+	padding: 7%;
+	margin: 1%;
+	background-color: #C6E48B;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.nav .btn-default {
+		height:34px;
+	}
+   .nav li ul
+		{
+			display: none;			
+		}
+
+	.nav li:hover ul
+		{
+			display: block;
+			position: absolute;
+			padding: 10px;
+			background-color: rgba(0,0,0,.1);
+			list-style-type: none;
+			text-align: center;
+		}
+		
+	.nav li ul li {					
+			padding: 5px 15px 5px 15px;
+	}
+		
+	ul li ul li:hover
+	{
+		background-color: rgba(0,0,0,.2);
+	}
+	
+	.glyphicon-trash:hover{
+		cursor: pointer;
+	}
+
+	  div.circle-avatar{
+		/* make it responsive */
+		max-width: 100%;
+		width:100%;
+		height:auto;
+		display:block;
+		/* div height to be the same as width*/
+		padding-top:100%;
+
+		/* make it a cirkle */
+		border-radius:50%;
+
+		/* Centering on image`s center*/
+		background-position-y: center;
+		background-position-x: center;
+		background-repeat: no-repeat;
+
+		/* it makes the clue thing, takes smaller dimention to fill div */
+		background-size: cover;
+
+		/* it is optional, for making this div centered in parent*/
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
